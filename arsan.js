@@ -110,3 +110,21 @@
 //     }
 // }
 // console.log(uniqueArr);
+
+
+//one more dsa problem is to find the maximum and minimum number in the array without using the built in methods
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let max = arr[0];
+// let min = arr[0];
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//         max = arr[i];
+//     }
+//     if (arr[i] < min) {
+//         min = arr[i];
+//     }
+// }
+// console.log("The maximum number is " + max);
+// console.log("The minimum number is " + min);
+
