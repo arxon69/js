@@ -90,3 +90,12 @@
 // for (let i = 0; i < arr.length; i++) {
 //     console.log(arr[i]);
 // }
+//this is the code ro rotate the array by one position to the right
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let copy = arr[arr.length - 1];
+// for (let i = arr.length - 1; i > 0; i--) {
+//     arr[i] = arr[i - 1];
+// }
+// arr[0] = copy;
+// console.log(arr);   
