@@ -99,3 +99,14 @@
 // }
 // arr[0] = copy;
 // console.log(arr);   
+
+// // how to remove the duplicates from the array in js using dsa not the built in methods
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5];
+// let uniqueArr = [];  //every element that comes from the loop stores here 
+// for (let i = 0; i < arr.length; i++) { //doing the itiration over the array
+//     if (!uniqueArr.includes(arr[i])) { //cheking tf the thing that has just come is already in the unique list if not go to the uniq list  else continew do nohting
+//         uniqueArr.push(arr[i]); //pusiong the ellement
+//     }
+// }
+// console.log(uniqueArr);
