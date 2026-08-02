@@ -165,9 +165,18 @@
 
 //one more dsa problem is to find the sum of all the elements in the array without using the built in methods
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let sum = 0;
-for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
-}
-console.log("The sum of all the elements in the array is " + sum);
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+// console.log("The sum of all the elements in the array is " + sum);
+// //one last dsa problem is to find the average of all the elements in the array without using the built in methods
+
+// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let sum1 = 0;
+// for (let i = 0; i < arr1.length; i++) {
+//     sum1 += arr1[i];
+// }
+// let average = sum1 / arr1.length;
+// console.log("The average of all the elements in the array is " + average);
