@@ -181,31 +181,51 @@
 // let average = sum1 / arr1.length;
 // console.log("The average of all the elements in the array is " + average);
 
-// js to make a calculator using prompt and alert
+// // js to make a calculator using prompt and alert
 
-let num1 = Number(prompt("Enter the first number:"));
-let num2 = Number(prompt("Enter the second number:"));
-let operator = prompt("Enter the operator (+, -, *, /):");
+// let num1 = Number(prompt("Enter the first number:"));
+// let num2 = Number(prompt("Enter the second number:"));
+// let operator = prompt("Enter the operator (+, -, *, /):");
 
-let result;
+// let result;
 
-if (operator === "+") {
-    result = num1 + num2;
-}
-else if (operator === "-") {
-    result = num1 - num2;
-}
-else if (operator === "*") {
-    result = num1 * num2;
-}
-else if (operator === "/") {
-    result = num1 / num2;
-}
-else {
-    alert("Invalid operator");
-}
+// if (operator === "+") {
+//     result = num1 + num2;
+// }
+// else if (operator === "-") {
+//     result = num1 - num2;
+// }
+// else if (operator === "*") {
+//     result = num1 * num2;
+// }
+// else if (operator === "/") {
+//     result = num1 / num2;
+// }
+// else {
+//     alert("Invalid operator");
+// }
 
-alert("The result is: " + result);
+// alert("The result is: " + result);
 
+// // js to make a simple todo list using prompt and alert
+
+let todoList = [];
+
+while (true) {
+    let action = prompt("Enter 'add' to add a task, 'view' to view tasks, 'remove' to remove a task, or 'exit' to quit:");
+    
+    if (action === "add") {
+
+        let task = prompt("Enter the task to add:");
+        todoList.push(task);
+        alert("Task added!");
+        
+    }
+    else if (action === "view") {
+        if (todoList.length === 0) {
+            alert("No tasks in the list.");
+        } else {
+            alert("Tasks:\n" + todoList.join("\n"));
+            
 
 
