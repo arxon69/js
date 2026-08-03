@@ -287,26 +287,52 @@
 
 
 
-//a rock sessior paper game using prompt and alert in js
+// //a rock sessior paper game using prompt and alert in js
 
-let userChoice = prompt("Enter your choice (rock, paper, scissors):").toLowerCase();
-let choices = ["rock", "paper", "scissors"];
-let computerChoice = choices[Math.floor(Math.random() * choices.length)];
+// let userChoice = prompt("Enter your choice (rock, paper, scissors):").toLowerCase();
+// let choices = ["rock", "paper", "scissors"];
+// let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
-alert("Computer chose: " + computerChoice);
+// alert("Computer chose: " + computerChoice);
 
-if (userChoice === computerChoice) {
-    alert("It's a tie!");
+// if (userChoice === computerChoice) {
+//     alert("It's a tie!");
+// }
+// else if (
+// (userChoice === "rock" && computerChoice === "scissors") ||
+// (userChoice === "paper" && computerChoice === "rock") ||
+// (userChoice === "scissors" && computerChoice === "paper")
+// ) {
+//     alert("You win!");
+// }
+// else {
+//     alert("You lose!");
+// }
+
+//one last for a day is to make a simple number guessing game using prompt and alert in js
+
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+let attempts = 0;
+let maxAttempts = 10;
+
+while (attempts < maxAttempts) {
+    let userGuess = Number(prompt("Guess a number between 1 and 100:"));
+    attempts++;
+    
+    if (userGuess === randomNumber) {
+
+        alert("Congratulations! You guessed the number in " + attempts + " attempts.");
+        break;
+    }
+    else if (userGuess < randomNumber) {
+        alert("Too low! Try again.");
+    }
+    else {
+        alert("Too high! Try again.");
+    }
 }
-else if (
-(userChoice === "rock" && computerChoice === "scissors") ||
-(userChoice === "paper" && computerChoice === "rock") ||
-(userChoice === "scissors" && computerChoice === "paper")
-) {
-    alert("You win!");
+
+if (attempts === maxAttempts) {
+    alert("Sorry, you've used all your attempts. The number was: " + randomNumber);
 }
-else {
-    alert("You lose!");
-}
- 
 
