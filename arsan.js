@@ -207,45 +207,62 @@
 
 // alert("The result is: " + result);
 
-// // js to make a simple todo list using prompt and alert
+// // // js to make a simple todo list using prompt and alert
 
-let todoList = [];
+// let todoList = [];
 
-while (true) {
-    let action = prompt("Enter 'add' to add a task, 'view' to view tasks, 'remove' to remove a task, or 'exit' to quit:");
+// while (true) {
+//     let action = prompt("Enter 'add' to add a task, 'view' to view tasks, 'remove' to remove a task, or 'exit' to quit:");
     
-    if (action === "add") {
+//     if (action === "add") {
 
-        let task = prompt("Enter the task to add:");
-        todoList.push(task);
-        alert("Task added!");
+//         let task = prompt("Enter the task to add:");
+//         todoList.push(task);
+//         alert("Task added!");
         
-    }
-    else if (action === "view") {
-        if (todoList.length === 0) {
-            alert("No tasks in the list.");
-        } else {
-            alert("Tasks:\n" + todoList.join("\n"));
-        }
+//     }
+//     else if (action === "view") {
+//         if (todoList.length === 0) {
+//             alert("No tasks in the list.");
+//         } else {
+//             alert("Tasks:\n" + todoList.join("\n"));
+//         }
         
-    }
-    else if (action === "remove") {
-        let task = prompt("Enter the task to remove:");
-        let index = todoList.indexOf(task);
-        if (index !== -1) {
-            todoList.splice(index, 1);
-            alert("Task removed!");
-        } else {
-            alert("Task not found.");
-        }
+//     }
+//     else if (action === "remove") {
+//         let task = prompt("Enter the task to remove:");
+//         let index = todoList.indexOf(task);
+//         if (index !== -1) {
+//             todoList.splice(index, 1);
+//             alert("Task removed!");
+//         } else {
+//             alert("Task not found.");
+//         }
 
-    }
-    else if (action === "exit") {
-        break;
-    }
-    else {
-        alert("Invalid action. Please try again.");
-    }
-}
+//     }
+//     else if (action === "exit") {
+//         break;
+//     }
+//     else {
+//         alert("Invalid action. Please try again.");
+//     }
+// }
+// js to make a simple quiz using prompt and alert with 3 questions and 4 options for each question and the user has to select the correct option and at the end the user will get the score
+
+let score = 0;
+
+let questions = [
+    {
+        question: "What is the capital of France?",
+        options: ["1. Berlin", "2. Madrid", "3. Paris", "4. Rome"],
+        answer: 3
+    },
+    {
+        question: "What is 2 + 2?",
+        options: ["1. 3", "2. 4", "3. 5", "4. 6"],
+        answer: 2
+    },
+    
+
 
 
