@@ -262,7 +262,31 @@ let questions = [
         options: ["1. 3", "2. 4", "3. 5", "4. 6"],
         answer: 2
     },
+    {
+        question: "Which planet is known as the Red Planet?",
+        options: ["1. Earth", "2. Mars", "3. Jupiter", "4. Venus"],
+        answer: 2
+    }
+];
+
+for (let i = 0; i < questions.length; i++) {
+    let userAnswer = Number(prompt(questions[i].question + "\n" + questions[i].options.join("\n")));
+
+
+    if (userAnswer === questions[i].answer) {
+        score++;
+        alert("Correct!");
+    }
+    else {
+        alert("Wrong! The correct answer is option " + questions[i].answer);
+    }
+}           
+
+
+
+
     
+
 
 
 
