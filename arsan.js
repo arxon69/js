@@ -231,62 +231,82 @@
 //     }
 //     else if (action === "remove") {
 //         let task = prompt("Enter the task to remove:");
-//         let index = todoList.indexOf(task);
-//         if (index !== -1) {
-//             todoList.splice(index, 1);
-//             alert("Task removed!");
-//         } else {
-//             alert("Task not found.");
-//         }
+// //         let index = todoList.indexOf(task);
+// //         if (index !== -1) {
+// //             todoList.splice(index, 1);
+// //             alert("Task removed!");
+// //         } else {
+// //             alert("Task not found.");
+// //         }
 
+// //     }
+// //     else if (action === "exit") {
+// //         break;
+// //     }
+// //     else {
+// //         alert("Invalid action. Please try again.");
+// //     }
+// // }
+// // js to make a simple quiz using prompt and alert with 3 questions and 4 options for each question and the user has to select the correct option and at the end the user will get the score
+
+// let score = 0;
+
+// let questions = [
+//     {
+//         question: "What is the capital of France?",
+//         options: ["1. Berlin", "2. Madrid", "3. Paris", "4. Rome"],
+//         answer: 3
+//     },
+//     {
+//         question: "What is 2 + 2?",
+//         options: ["1. 3", "2. 4", "3. 5", "4. 6"],
+//         answer: 2
+//     },
+//     {
+//         question: "Which planet is known as the Red Planet?",
+//         options: ["1. Earth", "2. Mars", "3. Jupiter", "4. Venus"],
+//         answer: 2
 //     }
-//     else if (action === "exit") {
-//         break;
+// ];
+
+// for (let i = 0; i < questions.length; i++) {
+//     let userAnswer = Number(prompt(questions[i].question + "\n" + questions[i].options.join("\n")));
+
+
+//     if (userAnswer === questions[i].answer) {
+//         score++;
+//         alert("Correct!");
 //     }
 //     else {
-//         alert("Invalid action. Please try again.");
+//         alert("Wrong! The correct answer is option " + questions[i].answer);
 //     }
-// }
-// js to make a simple quiz using prompt and alert with 3 questions and 4 options for each question and the user has to select the correct option and at the end the user will get the score
-
-let score = 0;
-
-let questions = [
-    {
-        question: "What is the capital of France?",
-        options: ["1. Berlin", "2. Madrid", "3. Paris", "4. Rome"],
-        answer: 3
-    },
-    {
-        question: "What is 2 + 2?",
-        options: ["1. 3", "2. 4", "3. 5", "4. 6"],
-        answer: 2
-    },
-    {
-        question: "Which planet is known as the Red Planet?",
-        options: ["1. Earth", "2. Mars", "3. Jupiter", "4. Venus"],
-        answer: 2
-    }
-];
-
-for (let i = 0; i < questions.length; i++) {
-    let userAnswer = Number(prompt(questions[i].question + "\n" + questions[i].options.join("\n")));
-
-
-    if (userAnswer === questions[i].answer) {
-        score++;
-        alert("Correct!");
-    }
-    else {
-        alert("Wrong! The correct answer is option " + questions[i].answer);
-    }
-}           
+// }              
+// alert("Your score is: " + score + " out of " + questions.length);
 
 
 
 
-    
 
+//a rock sessior paper game using prompt and alert in js
 
+let userChoice = prompt("Enter your choice (rock, paper, scissors):").toLowerCase();
+let choices = ["rock", "paper", "scissors"];
+let computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
+alert("Computer chose: " + computerChoice);
+
+if (userChoice === computerChoice) {
+    alert("It's a tie!");
+}
+else if (
+(userChoice === "rock" && computerChoice === "scissors") ||
+(userChoice === "paper" && computerChoice === "rock") ||
+(userChoice === "scissors" && computerChoice === "paper")
+) {
+    alert("You win!");
+}
+else {
+    alert("You lose!");
+}
+ 
 
