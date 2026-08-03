@@ -226,6 +226,26 @@ while (true) {
             alert("No tasks in the list.");
         } else {
             alert("Tasks:\n" + todoList.join("\n"));
-            
+        }
+        
+    }
+    else if (action === "remove") {
+        let task = prompt("Enter the task to remove:");
+        let index = todoList.indexOf(task);
+        if (index !== -1) {
+            todoList.splice(index, 1);
+            alert("Task removed!");
+        } else {
+            alert("Task not found.");
+        }
+
+    }
+    else if (action === "exit") {
+        break;
+    }
+    else {
+        alert("Invalid action. Please try again.");
+    }
+}
 
 
