@@ -180,3 +180,32 @@
 // }
 // let average = sum1 / arr1.length;
 // console.log("The average of all the elements in the array is " + average);
+
+// js to make a calculator using prompt and alert
+
+let num1 = Number(prompt("Enter the first number:"));
+let num2 = Number(prompt("Enter the second number:"));
+let operator = prompt("Enter the operator (+, -, *, /):");
+
+let result;
+
+if (operator === "+") {
+    result = num1 + num2;
+}
+else if (operator === "-") {
+    result = num1 - num2;
+}
+else if (operator === "*") {
+    result = num1 * num2;
+}
+else if (operator === "/") {
+    result = num1 / num2;
+}
+else {
+    alert("Invalid operator");
+}
+
+alert("The result is: " + result);
+
+
+
