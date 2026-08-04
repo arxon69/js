@@ -421,3 +421,16 @@
 // let greetingMessage = greet(userName);
 // alert(greetingMessage);
 
+// //what is callback function in js and how to use it with an example
+
+// function greet(name, callback) {
+//     let message = "Hello, " + name + "!";
+//     callback(message);
+// }
+
+// function displayMessage(message) {
+//     alert(message);
+// }
+
+// let userName = prompt("Enter your name:");
+// greet(userName, displayMessage);
