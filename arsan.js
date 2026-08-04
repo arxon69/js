@@ -347,3 +347,43 @@
 //     alert("It's not a palindrome.");
 // }
 
+// this is to make a simple calculator using prompt and alert in js with the use of switch case
+
+let num1 = Number(prompt("Enter the first number:"));
+let num2 = Number(prompt("Enter the second number:"));
+let operator = prompt("Enter the operator (+, -, *, /):");
+
+let result;
+
+switch (operator) {
+    case "+":
+        result = num1 + num2;
+        break;
+    case "-":
+        result = num1 - num2;
+        break;
+    case "*":
+        result = num1 * num2;
+        break;
+    case "/":
+        if (num2 !== 0) {
+            result = num1 / num2;
+        }
+        else {
+            alert("Division by zero is not allowed.");
+            result = null;
+        }
+        break;
+    default:
+        alert("Invalid operator");
+        result = null;
+}
+
+if (result !== null) {
+    alert("The result is: " + result);
+}
+
+
+
+
+
