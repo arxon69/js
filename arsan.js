@@ -410,3 +410,14 @@
 // let userName = prompt("Enter your name:");
 // let greetingMessage = greet(userName);
 // alert(greetingMessage);
+    
+// //what is arrow function in js and how to use it with an example
+
+// const greet = (name) => {
+//     return "Hello, " + name + "!";
+// }
+
+// let userName = prompt("Enter your name:");
+// let greetingMessage = greet(userName);
+// alert(greetingMessage);
+
