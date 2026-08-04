@@ -347,43 +347,57 @@
 //     alert("It's not a palindrome.");
 // }
 
-// this is to make a simple calculator using prompt and alert in js with the use of switch case
+// // this is to make a simple calculator using prompt and alert in js with the use of switch case
 
-let num1 = Number(prompt("Enter the first number:"));
-let num2 = Number(prompt("Enter the second number:"));
-let operator = prompt("Enter the operator (+, -, *, /):");
+// let num1 = Number(prompt("Enter the first number:"));
+// let num2 = Number(prompt("Enter the second number:"));
+// let operator = prompt("Enter the operator (+, -, *, /):");
 
-let result;
+// let result;
 
-switch (operator) {
-    case "+":
-        result = num1 + num2;
-        break;
-    case "-":
-        result = num1 - num2;
-        break;
-    case "*":
-        result = num1 * num2;
-        break;
-    case "/":
-        if (num2 !== 0) {
-            result = num1 / num2;
-        }
-        else {
-            alert("Division by zero is not allowed.");
-            result = null;
-        }
-        break;
-    default:
-        alert("Invalid operator");
-        result = null;
+// switch (operator) {
+//     case "+":
+//         result = num1 + num2;
+//         break;
+//     case "-":
+//         result = num1 - num2;
+//         break;
+//     case "*":
+//         result = num1 * num2;
+//         break;
+//     case "/":
+//         if (num2 !== 0) {
+//             result = num1 / num2;
+//         }
+//         else {
+//             alert("Division by zero is not allowed.");
+//             result = null;
+//         }
+//         break;
+//     default:
+//         alert("Invalid operator");
+//         result = null;
+// }
+
+// if (result !== null) {
+//     alert("The result is: " + result);
+// }
+
+//
+
+
+
+//DSA problem to find the missing number in an array of n-1 numbers from 1 to n
+
+let arr = [1, 2, 3, 4, 6, 7, 8, 9, 10];
+let n = arr.length + 1;
+let totalSum = (n * (n + 1)) / 2;
+let arrSum = 0;
+
+for (let i = 0; i < arr.length; i++) {
+    arrSum += arr[i];
 }
 
-if (result !== null) {
-    alert("The result is: " + result);
-}
-
-
-
-
+let missingNumber = totalSum - arrSum;
+console.log("The missing number is: " + missingNumber);
 
