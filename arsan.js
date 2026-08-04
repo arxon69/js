@@ -389,15 +389,24 @@
 
 //DSA problem to find the missing number in an array of n-1 numbers from 1 to n
 
-let arr = [1, 2, 3, 4, 6, 7, 8, 9, 10];
-let n = arr.length + 1;
-let totalSum = (n * (n + 1)) / 2;
-let arrSum = 0;
+// let arr = [1, 2, 3, 4, 6, 7, 8, 9, 10];
+// let n = arr.length + 1;
+// let totalSum = (n * (n + 1)) / 2;
+// let arrSum = 0;
 
-for (let i = 0; i < arr.length; i++) {
-    arrSum += arr[i];
-}
+// for (let i = 0; i < arr.length; i++) {
+//     arrSum += arr[i];
+// }
 
-let missingNumber = totalSum - arrSum;
-console.log("The missing number is: " + missingNumber);
+// let missingNumber = totalSum - arrSum;
+// console.log("The missing number is: " + missingNumber);
 
+// what is function in js and how to use it wth an example
+
+// function greet(name) {
+//     return "Hello, " + name + "!";
+// }
+
+// let userName = prompt("Enter your name:");
+// let greetingMessage = greet(userName);
+// alert(greetingMessage);
