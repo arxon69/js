@@ -311,28 +311,39 @@
 
 //one last for a day is to make a simple number guessing game using prompt and alert in js
 
-let randomNumber = Math.floor(Math.random() * 100) + 1;
-let attempts = 0;
-let maxAttempts = 10;
+// let randomNumber = Math.floor(Math.random() * 100) + 1;
+// let attempts = 0;
+// let maxAttempts = 10;
 
-while (attempts < maxAttempts) {
-    let userGuess = Number(prompt("Guess a number between 1 and 100:"));
-    attempts++;
+// while (attempts < maxAttempts) {
+//     let userGuess = Number(prompt("Guess a number between 1 and 100:"));
+//     attempts++;
     
-    if (userGuess === randomNumber) {
+//     if (userGuess === randomNumber) {
 
-        alert("Congratulations! You guessed the number in " + attempts + " attempts.");
-        break;
-    }
-    else if (userGuess < randomNumber) {
-        alert("Too low! Try again.");
-    }
-    else {
-        alert("Too high! Try again.");
-    }
-}
+//         alert("Congratulations! You guessed the number in " + attempts + " attempts.");
+//         break;
+//     }
+//     else if (userGuess < randomNumber) {
+//         alert("Too low! Try again.");
+//     }
+//     else {
+//         alert("Too high! Try again.");
+//     }
+// }
 
-if (attempts === maxAttempts) {
-    alert("Sorry, you've used all your attempts. The number was: " + randomNumber);
-}
+// if (attempts === maxAttempts) {
+//     alert("Sorry, you've used all your attempts. The number was: " + randomNumber);
+// }
+ 
+//one more question for today is to make a simple palindrome checker using prompt and alert in js
+
+// let userInput = prompt("Enter a word or phrase:").toLowerCase().replace(/[^a-z0-9]/g, '');
+// let reversedInput = userInput.split('').reverse().join('');
+
+// if (userInput === reversedInput) {
+//     alert("It's a palindrome!");
+// } else {
+//     alert("It's not a palindrome.");
+// }
 
