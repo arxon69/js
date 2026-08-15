@@ -434,3 +434,28 @@
 
 // let userName = prompt("Enter your name:");
 // greet(userName, displayMessage);
+
+
+
+// //learning the funtion in java script
+// function Name(){
+//     console.log("hello world");
+
+// }
+
+// Name();
+// Name();
+
+
+// function sum(a,b){
+//     console .log(a+b);
+// }
+
+
+
+
+function countVouwels(str){
+for (const char of str ){
+    console.log(char);
+}
+}
